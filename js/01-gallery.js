@@ -1,9 +1,5 @@
 import { galleryItems } from './gallery-items.js';
 
-// Change code below this line
-// import * as basicLightbox from 'basiclightbox'
-// import 'basiclightbox/dist/basicLightbox.min.css';
-
 const galleryList = document.querySelector('.gallery')
 
 const liTemplates = galleryItems.map((galleryItems)=> `
@@ -18,9 +14,9 @@ const liTemplates = galleryItems.map((galleryItems)=> `
   </a>
 </div>
 `);
-
-
 galleryList.insertAdjacentHTML("beforeend", liTemplates.join(""));
+
+
 
 galleryList.addEventListener('click', (e)=> {
     e.preventDefault();
